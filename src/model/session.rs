@@ -5,12 +5,8 @@ use notifbot_macros::notifbot_enum;
 notifbot_enum!(SessionNotifySettings { Notify, Ignore });
 
 notifbot_enum!(SessionKind {
-    Race,
-    SprintRace,
-    Qualifying,
-    SprintQualifying,
-    Practice,
-    Custom
+    Racing,
+    Other
 });
 
 notifbot_enum!(SessionStatus {
