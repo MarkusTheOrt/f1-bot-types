@@ -1,12 +1,6 @@
 use chrono::{DateTime, Utc};
 use notifbot_macros::notifbot_enum;
 
-notifbot_enum!(Series {
-    F1,
-    F2,
-    F3,
-    F1Academy
-});
 
 notifbot_enum!(SessionNotifySettings { Notify, Ignore });
 
@@ -28,13 +22,13 @@ notifbot_enum!(SessionStatus {
 
 #[derive(Debug, serde::Serialize, serde::Deserialize)]
 pub struct Session {
-    id: i64,
-    weekend: i64,
-    start_date: DateTime<Utc>,
-    title: String,
-    kind: SessionKind,
-    duration: i32,
-    notify: SessionNotifySettings,
-    status: SessionStatus,
+    pub id: i64,
+    pub weekend: i64,
+    pub start_date: DateTime<Utc>,
+    pub title: String,
+    pub kind: SessionKind,
+    pub duration: i32,
+    pub notify: SessionNotifySettings,
+    pub status: SessionStatus,
 }
 
