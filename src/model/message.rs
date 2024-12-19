@@ -17,6 +17,7 @@ pub struct Message {
     pub message: String,
     pub kind: MessageKind,
     pub posted: DateTime<Utc>,
-    pub hash: Option<String>,
     pub series: Series,
+    pub hash: Option<String>,
+    pub expiry: Option<DateTime<Utc>>,
 }
