@@ -10,7 +10,7 @@ notifbot_enum!(MessageKind {
     Custom
 });
 
-#[derive(serde::Serialize, serde::Deserialize)]
+#[derive(serde::Serialize, serde::Deserialize, Debug)]
 pub struct Message {
     pub id: u64,
     pub channel: String,

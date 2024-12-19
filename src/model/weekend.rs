@@ -3,7 +3,7 @@ use notifbot_macros::notifbot_enum;
 
 use super::Series;
 
-#[derive(serde::Serialize, serde::Deserialize)]
+#[derive(serde::Serialize, serde::Deserialize, Debug)]
 pub struct Weekend {
     pub id: u64,
     pub name: String,
